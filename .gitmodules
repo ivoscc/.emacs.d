@@ -1,0 +1,3 @@
+[submodule "themes/molokai"]
+	path = themes/molokai
+	url = git@github.com:ivoscc/color-theme-molokai.git

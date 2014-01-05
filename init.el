@@ -10,7 +10,9 @@
 ;; List of packages to be checked/installed at startup
 (setq package-dependencies
       '(evil
-        surround))
+        surround
+	color-theme
+	cider))
 
 ;; Set path to .emacs.d and dependencies
 (setq dotfiles-dir (file-name-directory
