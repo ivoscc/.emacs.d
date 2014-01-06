@@ -11,8 +11,10 @@
 (setq package-dependencies
       '(evil
         surround
-	color-theme
-	cider))
+        color-theme
+        linum-relative
+	linum-off
+        cider))
 
 ;; Set path to .emacs.d and dependencies
 (setq dotfiles-dir (file-name-directory
