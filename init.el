@@ -13,8 +13,11 @@
         surround
         color-theme
         linum-relative
-	linum-off
-        cider))
+        linum-off
+        python-mode
+        ipython
+        cider
+        evil-nerd-commenter))
 
 ;; Set path to .emacs.d and dependencies
 (setq dotfiles-dir (file-name-directory
@@ -41,3 +44,8 @@
 ;; Load user specific configuration
 (when (file-exists-p user-lisp-dir)
   (mapc 'load (directory-files user-lisp-dir nil "^[^#].*el$")))
+
+;; Sane tabs
+(setq c-basic-indent 2)
+(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
