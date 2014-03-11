@@ -14,5 +14,6 @@
   (evil-yank (point) (point-at-eol)))
 
 (define-key evil-normal-state-map "Y" 'copy-to-end-of-line)
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 
 (provide 'setup-evil)
