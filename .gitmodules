@@ -1,3 +1,6 @@
 [submodule "themes/molokai"]
 	path = themes/molokai
 	url = git@github.com:ivoscc/color-theme-molokai.git
+[submodule "themes/tangotango"]
+	path = themes/tangotango
+	url = https://github.com/juba/color-theme-tangotango.git
