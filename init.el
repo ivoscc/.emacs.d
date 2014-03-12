@@ -9,15 +9,31 @@
 
 ;; List of packages to be checked/installed at startup
 (setq package-dependencies
-      '(evil
+      '(
+        ;; generic goodies
+        auto-complete
+        ac-slime
+        ;; vim nostalgia
+        evil
+        evil-nerd-commenter
         surround
-        color-theme
         linum-relative
         linum-off
+        ;; python
         python-mode
         ipython
+        jedi
+        ;; clojure
+        clojure-mode
         cider
-        evil-nerd-commenter))
+        ;; navigation 
+        helm
+        helm-ls-git
+        ;; miscelaneous customizations
+        color-theme
+        ;; not working yet :(
+        ;; multiple-cursors
+        ))
 
 ;; Set path to .emacs.d and dependencies
 (setq dotfiles-dir (file-name-directory
@@ -63,3 +79,8 @@
 
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+;; Auto-complete stuff
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'auto-complete-config)
+(ac-config-default)
