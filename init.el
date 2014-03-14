@@ -13,6 +13,8 @@
         ;; generic goodies
         auto-complete
         ac-slime
+        paredit
+        evil-paredit
         ;; vim nostalgia
         evil
         evil-nerd-commenter
@@ -26,9 +28,11 @@
         ;; clojure
         clojure-mode
         cider
-        ;; navigation 
+        ;; navigation/searching
+        fasd
         helm
         helm-ls-git
+        wgrep
         ;; miscelaneous customizations
         color-theme
         ;; not working yet :(
