@@ -1,0 +1,5 @@
+(ido-mode 1) 
+(setq ido-use-filename-at-point 'guess) 
+(global-set-key (kbd "C-x C-f") 'ido-find-file)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)

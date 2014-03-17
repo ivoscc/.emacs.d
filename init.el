@@ -34,6 +34,7 @@
         helm-ls-git
         wgrep
         ;; miscelaneous customizations
+        rainbow-delimiters
         color-theme
         ;; not working yet :(
         ;; multiple-cursors
