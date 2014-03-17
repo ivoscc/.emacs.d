@@ -24,6 +24,7 @@
         ;; python
         python-mode
         ipython
+        yaml-mode
         jedi
         ;; clojure
         clojure-mode
@@ -38,6 +39,8 @@
         color-theme
         ;; not working yet :(
         ;; multiple-cursors
+        ;; productivity? 
+        org
         ))
 
 ;; Set path to .emacs.d and dependencies
