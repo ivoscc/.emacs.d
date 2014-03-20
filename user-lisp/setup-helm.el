@@ -5,6 +5,7 @@
 
 (global-set-key (kbd "M-p") 'helm-browse-project)
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "<f2>") 'helm-buffers-list)
+(global-set-key (kbd "<f2>") 'dired)
+(global-set-key (kbd "<f3>") 'helm-buffers-list)
 
 (provide 'setup-helm)
