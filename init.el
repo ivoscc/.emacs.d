@@ -28,6 +28,9 @@
         ;; clojure
         clojure-mode
         cider
+        ;; go
+        go-mode
+        go-autocomplete
         ;; navigation/searching
         fasd
         helm
