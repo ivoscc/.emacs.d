@@ -16,4 +16,13 @@
 (define-key evil-normal-state-map "Y" 'copy-to-end-of-line)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 
+;;; esc quits (Taken from http://stackoverflow.com/questions/8483182/emacs-evil-mode-best-practice)
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
 (provide 'setup-evil)
