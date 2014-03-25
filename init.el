@@ -15,8 +15,10 @@
         ac-slime
         paredit
         evil-paredit
+        sr-speedbar
         ;; vim nostalgia
         evil
+        evil-leader
         evil-nerd-commenter
         surround
         linum-relative
@@ -29,6 +31,8 @@
         ;; clojure
         clojure-mode
         cider
+        ;; erlang
+        erlang
         ;; navigation/searching
         fasd
         helm
