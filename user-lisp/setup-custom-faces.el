@@ -12,4 +12,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(speedbar-directory-face ((t (:foreground "#729fcf"))))
- '(speedbar-tag-face ((t (:foreground "#ee4346")))))
+ '(speedbar-tag-face ((t (:foreground "#ee4346"))))
+ '(vertical-border ((t nil))))
