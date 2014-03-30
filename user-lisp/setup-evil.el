@@ -1,5 +1,10 @@
 (require 'evil)
 (require 'surround)
+(require 'evil-leader)
+
+(global-evil-leader-mode)
+(evil-leader/set-leader ",")
+(evil-leader/set-key "e" 'sr-speedbar-toggle)
 
 (evil-mode 1)
 (global-surround-mode 1)

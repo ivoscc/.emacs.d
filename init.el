@@ -15,8 +15,11 @@
         ac-slime
         paredit
         evil-paredit
+        sr-speedbar
+        perspective
         ;; vim nostalgia
         evil
+        evil-leader
         evil-nerd-commenter
         surround
         linum-relative
@@ -24,6 +27,7 @@
         ;; python
         python-mode
         ipython
+        yaml-mode
         jedi
         ;; clojure
         clojure-mode
@@ -31,6 +35,8 @@
         ;; go
         go-mode
         go-autocomplete
+        ;; erlang
+        erlang
         ;; navigation/searching
         fasd
         helm
@@ -41,6 +47,8 @@
         color-theme
         ;; not working yet :(
         ;; multiple-cursors
+        ;; productivity? 
+        org
         ))
 
 ;; Set path to .emacs.d and dependencies

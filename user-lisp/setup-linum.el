@@ -4,5 +4,6 @@
 (column-number-mode 1)
 (global-linum-mode 1)
 (setq linum-relative-format "%2s ")
+(setq linum-relative-current-symbol "")
 
 (provide 'setup-linum)
