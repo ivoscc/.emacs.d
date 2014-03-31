@@ -37,6 +37,8 @@
         go-autocomplete
         ;; erlang
         erlang
+        ;; markdown
+        markdown-mode
         ;; navigation/searching
         fasd
         helm

@@ -20,6 +20,14 @@
   (custom-persp "emacs"
                 (find-file "~/.emacs.d/init.el")))
  
-(global-set-key (kbd "<backtab>") 'custom-persp-last)
-(define-key persp-mode-map (kbd "C-x p e") 'custom-persp/emacs)
+(defun persp-cycle ()
+  "Cycle throught the available perspectives."
+  (interactive)
+  (let ((next-pos (1+ (persp-curr-position)))
+        (list-size (length (persp-all-names))))
+  (cond ((eq 1 list-size) (persp-switch nil))
+         ((>= next-pos list-size) (persp-switch (nth 0 (persp-all-names))))
+         (t (persp-next)))))
 
+(global-set-key (kbd "<backtab>") 'persp-cycle)
+(define-key persp-mode-map (kbd "C-x p e") 'custom-persp/emacs)
