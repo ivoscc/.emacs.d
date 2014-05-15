@@ -102,3 +102,4 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
 (ac-config-default)
+(ac-flyspell-workaround)
