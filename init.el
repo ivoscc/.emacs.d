@@ -18,6 +18,7 @@
         sr-speedbar
         perspective
         magit
+        xclip
         ;; vim nostalgia
         evil
         evil-leader
@@ -84,20 +85,6 @@
 (setq c-basic-indent 2)
 (setq tab-width 4)
 (setq-default indent-tabs-mode nil)
-
-;; Integrating the clipboard with OS X
-;; Taken from http://www.emacswiki.org/emacs/CopyAndPaste#toc9
-(defun copy-from-osx ()
-  (shell-command-to-string "pbpaste"))
-
-(defun paste-to-osx (text &optional push)
-  (let ((process-connection-type nil))
-    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
-      (process-send-string proc text)
-      (process-send-eof proc))))
-
-(setq interprogram-cut-function 'paste-to-osx)
-(setq interprogram-paste-function 'copy-from-osx)
 
 ;; Auto-complete stuff
 (add-to-list 'load-path "~/.emacs.d/")
