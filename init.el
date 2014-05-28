@@ -17,6 +17,7 @@
         evil-paredit
         sr-speedbar
         perspective
+        magit
         ;; vim nostalgia
         evil
         evil-leader
