@@ -39,6 +39,8 @@
         go-autocomplete
         ;; erlang
         erlang
+        ;; julia
+        ess
         ;; markdown
         markdown-mode
         ;; navigation/searching
