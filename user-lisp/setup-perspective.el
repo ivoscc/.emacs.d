@@ -29,5 +29,12 @@
          ((>= next-pos list-size) (persp-switch (nth 0 (persp-all-names))))
          (t (persp-next)))))
 
+(defun persp-kill-current ()
+  "Kills the currently active perspective."
+  (interactive)
+  (persp-kill (nth (persp-curr-position) (persp-all-names))))
+
 (global-set-key (kbd "<backtab>") 'persp-cycle)
+(define-key persp-mode-map (kbd "C-x p q") 'persp-kill-current)
+(define-key persp-mode-map (kbd "C-x p n") 'persp-switch)
 (define-key persp-mode-map (kbd "C-x p e") 'custom-persp/emacs)
