@@ -1,3 +1,4 @@
+(setq evil-want-C-i-jump nil)
 (require 'evil)
 (require 'surround)
 (require 'evil-leader)
