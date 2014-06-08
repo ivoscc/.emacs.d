@@ -1,13 +1,11 @@
 (require 'perspective)
 (persp-mode)
 
-;; Most of this conf file taken from Magnar Sveen and this post:
-;; http://www.wickeddutch.com/2014/01/03/gaining-some-perspective-in-emacs/
-
 (defun custom-persp-last ()
   (interactive)
   (persp-switch (persp-name persp-last)))
 
+;; Taken from http://www.wickeddutch.com/2014/01/03/gaining-some-perspective-in-emacs/
 (defmacro custom-persp (name &rest body)
   `(let ((initialize (not (gethash ,name perspectives-hash)))
          (current-perspective persp-curr))
@@ -19,6 +17,11 @@
   (interactive)
   (custom-persp "emacs"
                 (find-file "~/.emacs.d/init.el")))
+
+(defun custom-persp/agenda ()
+  (interactive)
+  (custom-persp "agenda"
+                (org-agenda)))
  
 (defun persp-cycle ()
   "Cycle throught the available perspectives."
@@ -38,3 +41,4 @@
 (define-key persp-mode-map (kbd "C-x p q") 'persp-kill-current)
 (define-key persp-mode-map (kbd "C-x p n") 'persp-switch)
 (define-key persp-mode-map (kbd "C-x p e") 'custom-persp/emacs)
+(define-key persp-mode-map (kbd "C-x p a") 'custom-persp/agenda)

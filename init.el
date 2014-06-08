@@ -19,6 +19,7 @@
         perspective
         magit
         xclip
+        htmlize
         ;; vim nostalgia
         evil
         evil-leader
@@ -28,7 +29,7 @@
         linum-off
         ;; python
         python-mode
-        ipython
+        ;; ipython
         yaml-mode
         jedi
         ;; clojure
@@ -37,6 +38,9 @@
         ;; go
         go-mode
         go-autocomplete
+        ;; gore-mode
+        ;; scala
+        scala-mode2
         ;; erlang
         erlang
         ;; julia
@@ -44,7 +48,6 @@
         ;; markdown
         markdown-mode
         ;; navigation/searching
-        fasd
         helm
         helm-ls-git
         wgrep
@@ -55,6 +58,9 @@
         ;; multiple-cursors
         ;; productivity? 
         org
+        ox-reveal
+        ;; things a text editor shouldn't do
+        znc
         ))
 
 ;; Set path to .emacs.d and dependencies
