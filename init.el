@@ -20,6 +20,7 @@
         magit
         xclip
         htmlize
+        flycheck
         ;; vim nostalgia
         evil
         evil-leader
@@ -45,6 +46,8 @@
         erlang
         ;; julia
         ess
+        ;; php
+        php-mode
         ;; markdown
         markdown-mode
         ;; navigation/searching
@@ -61,6 +64,10 @@
         ox-reveal
         ;; things a text editor shouldn't do
         znc
+        ;; music
+        soundcloud
+        ;; javascript
+        ;; skewer-mode
         ))
 
 ;; Set path to .emacs.d and dependencies
@@ -107,3 +114,9 @@
  '(speedbar-directory-face ((t (:foreground "#729fcf"))))
  '(speedbar-tag-face ((t (:foreground "#ee4346"))))
  '(vertical-border ((t nil))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-export-backends (quote (ascii html icalendar latex md))))
