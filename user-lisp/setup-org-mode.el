@@ -1,4 +1,4 @@
-(setq org-startup-folded nil)
+;; (setq org-startup-folded nil)
 (setq org-src-fontify-natively t)
 (setq org-log-done t)
 (setq org-hide-leading-stars t)
@@ -27,5 +27,17 @@
 
 ;; for reveal.js exporting
 (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/2.5.0/")
+(setq org-src-preserve-indentation t)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)))
+
+(setq org-todo-keywords
+       '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+
+(require 'org-annotate-file)
+(global-set-key (kbd "C-c C-l") 'org-annotate-file)
+(setq org-annotate-file-storage-file "~/.org/annotations.org")
 
 (provide 'setup-org-mode)

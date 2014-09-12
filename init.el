@@ -21,6 +21,13 @@
         xclip
         htmlize
         flycheck
+        ;; racket
+        quack
+        geiser
+        ac-geiser
+        ;; csharp
+        csharp-mode
+        omnisharp
         ;; vim nostalgia
         evil
         evil-leader
@@ -36,6 +43,8 @@
         ;; clojure
         clojure-mode
         cider
+        ;; sql
+        sql
         ;; go
         go-mode
         go-autocomplete
@@ -54,13 +63,15 @@
         helm
         helm-ls-git
         wgrep
+        ;; html
+        emmet-mode
         ;; miscelaneous customizations
         rainbow-delimiters
         color-theme
         ;; not working yet :(
         ;; multiple-cursors
         ;; productivity? 
-        org
+        org-plus-contrib
         ox-reveal
         ;; things a text editor shouldn't do
         znc
