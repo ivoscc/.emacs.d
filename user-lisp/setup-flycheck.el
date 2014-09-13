@@ -1,5 +1,4 @@
 (require 'flycheck)
-(require 'php-mode)
 (defun magnars/adjust-flycheck-automatic-syntax-eagerness ()
   "Adjust how often we check for errors based on if there are any.
 
@@ -22,5 +21,4 @@ clean buffer we're an order of magnitude laxer about checking."
 (setq flycheck-check-syntax-automatically '(save
                                             idle-change
                                             mode-enabled))
-(setq flycheck-phpcs-standard "PSR2")
 (provide 'setup-flycheck)

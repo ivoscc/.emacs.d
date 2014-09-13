@@ -1,4 +1,5 @@
-;; (setq org-startup-folded nil)
+(require 'org)
+(setq org-startup-folded nil)
 (setq org-src-fontify-natively t)
 (setq org-log-done t)
 (setq org-hide-leading-stars t)

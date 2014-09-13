@@ -15,19 +15,18 @@
         ac-slime
         paredit
         evil-paredit
-        sr-speedbar
         perspective
         magit
         xclip
         htmlize
         flycheck
-        ;; racket
+        racket-mode
         quack
         geiser
         ac-geiser
         ;; csharp
-        csharp-mode
-        omnisharp
+        ;; csharp-mode
+        ;; omnisharp
         ;; vim nostalgia
         evil
         evil-leader
@@ -55,8 +54,6 @@
         erlang
         ;; julia
         ess
-        ;; php
-        php-mode
         ;; markdown
         markdown-mode
         ;; navigation/searching
@@ -70,15 +67,13 @@
         color-theme
         ;; not working yet :(
         ;; multiple-cursors
-        ;; productivity? 
+        ;; productivity?
         org-plus-contrib
         ox-reveal
         ;; things a text editor shouldn't do
         znc
-        ;; music
-        soundcloud
         ;; javascript
-        ;; skewer-mode
+        skewer-mode
         ))
 
 ;; Set path to .emacs.d and dependencies
